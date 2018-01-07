@@ -28,6 +28,14 @@
     "applicationType": "monolith",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
-    "enableTranslation": false
+    "enableTranslation": false,
+    "appsFolders": [
+      "gcloudessql"
+    ],
+    "directoryPath": "../",
+    "dockerRepositoryName": "vsoma6",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "gcloud",
+    "kubernetesServiceType": "LoadBalancer"
   }
 }

@@ -21,9 +21,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/gcloudessql
-        username: gcloudessql
-        password:
+        url: jdbc:postgresql://google/vsoma?useSSL=false&socketFactoryArg=vsomadev-189423:us-east1:postgres9&socketFactory=com.google.cloud.sql.postgres.SocketFactory
+        username: postgres
+        password: nycHYD@CA$6
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL
@@ -35,8 +35,8 @@ spring:
             hibernate.generate_statistics: false
     data:
         elasticsearch:
-            cluster-name:
-            cluster-nodes: localhost:9300
+            cluster-name: elasticsearch
+            cluster-nodes: 35.227.38.25:9300
     mail:
         host: localhost
         port: 25
